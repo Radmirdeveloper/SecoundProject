@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    font-family: "Tavolga", sans-serif;
+}
+
+@font-face {
+    font-family: "Tavolga";
+    src: url("../Fonts/tavolgafree.otf") format("opentype");
+}
+@font-face {
+    font-family: "LifehackSans";
+    src: url("../Fonts/LifehackSans.ttf") format("truetype");
+}
+
+#header {
+    background-color: rgb(199, 210, 53);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+#header-container {
+    margin: 0 auto;
+    padding: 34px 0;
+    max-width: 1200px;
+}
+
+.header-logo {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 320px;
+}
+
+.header-menu {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 60px
+}
+
+#useful {
+    background-image: url("../images/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#useful-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 240px 0 201px 0;
+    position: relative;
+}
+
+#useful-container h1 {
+    font-size: 55px;
+    color: rgb(215, 168, 77);
+    max-width: 533px;
+    margin: 0;
+    font-weight: normal;
+}
+
+#useful-text {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 17px;
+    color: rgb(57, 39, 3);
+    max-width: 517px;
+    line-height:25px;
+}
+
+.active {
+    border: 1px solid rgb(215, 168, 77);
+    text-align: center;
+    width: 232px;
+    height: 60px;
+    padding: 4px;
+    background: white;
+    font-family: "Tavolga", sans-serif;
+}
+
+.button-text {
+    background-color: rgb(215, 168, 77);
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    max-width: 225px;
+    padding: 15px;
+}
+
+#advantage {
+    background: #f1c90c;
+    margin: 0;
+}
+
+#advantage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 63px 0;
+}
+
+div.tetra {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-right: 178px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 1;
+    padding: 6px 0 6px 10px;
+    line-height: 1;
+}
+div.tetra::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(215, 168, 77);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top:0;
+}
+div.tetra:last-child {
+    margin-right: 0;
+}
+#comments {
+    background-color: rgb(255, 255, 255);
+    padding: 150px 0 100px 0;
+}
+#comments-text {
+    font-size: 20px;
+    color: rgb(57, 39, 3);
+    line-height: 1.5;
+    text-align: center;
+    max-width: 687px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+#request {
+    background: #fefaf3;
+}
+
+#request-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px 0;
+    position: relative;
+}
+
+#request-container h2 {
+    font-size: 55px;
+    color: rgb(215, 168, 77);
+    max-width: 468px;
+    margin: 0;
+    padding-bottom: 80px;
+    font-weight: normal;
+}
+
+#request-container form {
+    border-width: 1px;
+    border-color: rgb(215, 168, 77);
+    border-style: solid;
+    width: 648px;
+}
+
+#morning {
+    font-size: 15px;
+    color: rgb(57, 39, 3);
+    line-height: 1.667;
+    max-width: 192px;
+    padding: 0px 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#form-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 32px;
+    text-align: center;
+    border-left: 1px solid rgb(244, 222, 180);
+}
+#form-text .active {
+    margin-top: 10px;
+}
+#form-text h4 {
+    font-size: 20px;
+    color: rgb(57, 39, 3);
+    line-height: 1.25;
+    text-align: center;
+    max-width: 306px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-weight: normal;
+}
+
+#fill-in {
+    max-width: 255px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#form-text input {
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #d7a84d;
+    background: #fefaf3;
+    padding: 10px;
+    outline: none;
+    width: 232px;
+    box-sizing: border-box;
+}
+.active:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.active:active {
+    opacity: 0.5;
+}
+#form-text input::placeholder {
+    color: #d7a84d;
+}
+#footer {
+    background: #9aa50c
+}
+
+#footer-container {
+    padding: 43px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#footer-container .header-logo {
+    margin-right: 319px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer-container span#time {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-right: 263px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer-container span#rights {
+    font-size: 13px;
+    color: rgb(58, 62, 7);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#arrow {
+    border-radius: 50%;
+    background-color: rgb(244, 222, 180);
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    vertical-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#arrow img {
+    top: 20px;
+    position: relative;
+}
+
+#try {
+    position: absolute;
+    bottom: 144px;
+    left: 249px;
+    font-size: 25px;
+    font-family: "LifehackSans", sans-serif;
+    color: rgb(193, 205, 65);
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 0.93938712219109,0.33796832248742,-0.33636554551413,0.94386328828046,0,0);
+    -webkit-transform: matrix( 0.93938712219109,0.33796832248742,-0.33636554551413,0.94386328828046,0,0);
+    -ms-transform: matrix( 0.93938712219109,0.33796832248742,-0.33636554551413,0.94386328828046,0,0);
+    max-width: 122px;
+    letter-spacing: 2px;
+}
+
+img#try-arrow {
+    position: absolute;
+    bottom: 142px;
+    left: 195px
+}
+
+#flower {
+    position: absolute;
+    top: -161px;
+    right: -90px
+}
+#table {
+   display: inline-block;
+    vertical-align: bottom;
+}
+#quote {
+    position: absolute;
+    top: -1px;
+    left: -39px;
+    z-index: -1;
+}
+#request-container form {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+    padding: 30px 0;
+}
